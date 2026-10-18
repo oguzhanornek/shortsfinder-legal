@@ -1,0 +1,20 @@
+# ShortsFinder
+
+> ShortsFinder is a mobile app (Android first, iPhone planned) that uses AI to find the best moments in long videos and turn them into vertical Shorts with automatic captions, ready to edit and export.
+
+## What it does
+- Input: a YouTube link or a long video from the phone's gallery.
+- AI analysis ranks the strongest moments with a score (for example: knockout, submission, overtake, goal, crowd peak, strong opinion, story payoff). It looks at the picture, not only the transcript, so it works for videos where the best moment has no words.
+- Works well for podcasts, interviews, UFC/MMA fights, F1 and other racing, football, gaming, concerts and events, and educational videos.
+- Output: 9:16 vertical Shorts with word-by-word captions in five styles (Minimal, Bold, Highlight, Karaoke, Modern).
+- Editing on the phone: trim, crop/reframe, speed, audio volume, caption style. Export in 1080p and share to YouTube Shorts, TikTok, Instagram Reels and others. The app does not post for you.
+
+## Pricing
+- Free download. Uses credits bought in-app (no subscription).
+- An analysis is priced by video length and includes 3 Shorts of the user's choice; extra Shorts cost a few more credits. Credits for a failed analysis are refunded.
+
+## Links
+- Website: https://shortsfinder.com/
+- Privacy policy: https://shortsfinder.com/privacy.html
+- Delete account: https://shortsfinder.com/delete-account.html
+- Contact: ornekoguzhan@gmail.com
