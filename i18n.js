@@ -1,5 +1,8 @@
 // ShortsFinder i18n. English lives in the HTML (default + SEO); this file holds the other languages.
-// Pick order: ?lang= → saved choice → first supported browser language → English.
+// Each language also has its own pre-rendered URL (/tr/, /es/, /de/ built by build_langs.mjs) for search engines.
+// On those pages the language is fixed; the picker navigates between URLs.
+// On the English root only, text is swapped in place: ?lang= → saved choice → first supported browser language → English.
+// The root URL never redirects, so crawlers always get English there.
 // Values may contain trusted inline HTML (<br>, <span class="grad-text">).
 (() => {
 const LANGS = { en: 'English', tr: 'Türkçe', es: 'Español', de: 'Deutsch' };
@@ -205,7 +208,10 @@ de: {
 },
 };
 
+if (typeof document === 'undefined') { module.exports = { LANGS, T }; return; } // build_langs.mjs
+
 const ok = l => Object.hasOwn(LANGS, l);
+const page = document.documentElement.lang; // 'en' on the root, else a pre-rendered /xx/ page
 const pick = () => {
   const q = new URLSearchParams(location.search).get('lang');
   if (ok(q)) return q;
@@ -236,9 +242,11 @@ document.querySelectorAll('.lang-select').forEach(s => {
   s.innerHTML = Object.entries(LANGS).map(([k, v]) => `<option value="${k}">${v}</option>`).join('');
   s.addEventListener('change', () => {
     try { localStorage.setItem('sf-lang', s.value); } catch (e) {}
-    apply(s.value);
+    if (page === 'en' && s.value === 'en') apply('en');
+    else location.href = (s.value === 'en' ? '/' : `/${s.value}/`) + location.hash;
   });
 });
 
-apply(pick());
+if (page === 'en') apply(pick());
+else document.querySelectorAll('.lang-select').forEach(s => { s.value = page; });
 })();

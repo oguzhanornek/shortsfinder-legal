@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ShortsFinder — Yapay zekâyla YouTube videolarından Shorts oluştur</title>
+<meta name="description" content="Uzun YouTube videolarını yapay zekâyla Shorts’a çevir. ShortsFinder en çarpıcı anları bulur, dikey kliplere dönüştürür, altyazısını ekler; sana sadece düzenleyip indirmek kalır.">
+<meta name="theme-color" content="#07070C">
+<link rel="canonical" href="https://shortsfinder.com/tr/">
+<link rel="alternate" hreflang="en" href="https://shortsfinder.com/">
+<link rel="alternate" hreflang="tr" href="https://shortsfinder.com/tr/">
+<link rel="alternate" hreflang="es" href="https://shortsfinder.com/es/">
+<link rel="alternate" hreflang="de" href="https://shortsfinder.com/de/">
+<link rel="alternate" hreflang="x-default" href="https://shortsfinder.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ShortsFinder — Uzun videoyu at, Shorts’ları al.">
+<meta property="og:description" content="Uzun YouTube videolarını yapay zekâyla Shorts’a çevir. ShortsFinder en çarpıcı anları bulur, dikey kliplere dönüştürür, altyazısını ekler; sana sadece düzenleyip indirmek kalır.">
+<meta property="og:url" content="https://shortsfinder.com/tr/">
+<meta property="og:image" content="https://shortsfinder.com/assets/og.png">
+<meta property="og:site_name" content="ShortsFinder">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="ShortsFinder app turning a long video into ranked Shorts">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ShortsFinder — Uzun videoyu at, Shorts’ları al.">
+<meta name="twitter:description" content="Uzun YouTube videolarını yapay zekâyla Shorts’a çevir. ShortsFinder en çarpıcı anları bulur, dikey kliplere dönüştürür, altyazısını ekler; sana sadece düzenleyip indirmek kalır.">
+<meta name="twitter:image" content="https://shortsfinder.com/assets/og.png">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="apple-touch-icon" href="/assets/icon-512.png">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://shortsfinder.com/#org",
+   "name": "ShortsFinder",
+   "url": "https://shortsfinder.com/",
+   "logo": "https://shortsfinder.com/assets/icon-512.png",
+   "email": "ornekoguzhan@gmail.com",
+   "founder": {
+    "@type": "Person",
+    "name": "Oğuzhan Örnek"
+   }
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://shortsfinder.com/#site",
+   "name": "ShortsFinder",
+   "url": "https://shortsfinder.com/",
+   "publisher": {
+    "@id": "https://shortsfinder.com/#org"
+   },
+   "inLanguage": [
+    "en",
+    "tr",
+    "es",
+    "de"
+   ]
+  },
+  {
+   "@type": "MobileApplication",
+   "name": "ShortsFinder",
+   "alternateName": "Shorts Finder",
+   "operatingSystem": "Android",
+   "applicationCategory": "MultimediaApplication",
+   "applicationSubCategory": "Video editor",
+   "url": "https://shortsfinder.com/",
+   "image": "https://shortsfinder.com/assets/og.png",
+   "publisher": {
+    "@id": "https://shortsfinder.com/#org"
+   },
+   "description": "AI app that finds the best moments in long YouTube or gallery videos (podcasts, interviews, UFC/MMA, F1, football, gaming) and turns them into vertical Shorts with automatic captions, then lets you trim, crop and export them.",
+   "featureList": [
+    "AI moment detection with scores",
+    "Automatic word-by-word captions in 5 styles",
+    "Vertical 9:16 crop and reframe",
+    "Trim, speed and audio tools",
+    "1080p export on device",
+    "YouTube links and gallery videos"
+   ],
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "description": "Free download; credits sold in-app"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "ShortsFinder ne yapar?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Uzun videolardaki en güçlü anları yapay zekâyla bulur ve bunları kısa videolara dönüştürür."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "YouTube videolarıyla çalışıyor mu?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Evet. Desteklenen bir YouTube videosunun linkini uygulamaya yapıştırman yeterli; gerisini ShortsFinder halleder."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Oluşan Shorts’ları düzenleyebilir miyim?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Evet. Altyazı, stil, kadraj, süre ve ses için pratik düzenleme araçları var."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Videoları indirebilir miyim?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Evet. Hazır videoları dosya olarak indirip istediğin yerde kullanabilirsin."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Videolarımı benim yerime paylaşıyor mu?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Şimdilik hayır. İlk sürüm video oluşturmaya ve indirmeye odaklanıyor; paylaşımı telefonundan kendin yapıyorsun. Doğrudan paylaşım ileride gelebilir."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "En iyi hangi videolarla çalışır?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Podcast ve röportajlarda harika iş çıkarır; ama asıl farkı, en iyi anın konuşmadan oluştuğu videolarda görürsün: UFC ve MMA maçları, F1 yarışları, futbol maçları, oyun videoları, konserler. Yapay zekâ sadece konuşulanı değil, ekranda olanı da izler."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Telefonumdaki videoları kullanabilir miyim?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Evet. YouTube linkinin yanı sıra galerinden uzun bir video seçebilirsin; ShortsFinder en iyi anlarını aynı şekilde bulur."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "ShortsFinder ücretli mi?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Uygulamayı indirmek ücretsiz, kullanım kredilerle. Her analizin kredisi videonun uzunluğuna göre belirlenir ve seçtiğin 3 Short buna dahildir; fazlası için birkaç kredi daha harcarsın. Abonelik yok, analiz başarısız olursa krediler iade edilir."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "iPhone’da var mı?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "ShortsFinder önce Android’de, Google Play’de yayında olacak. iPhone sürümü de planlarımızda."
+     }
+    }
+   ],
+   "inLanguage": "tr"
+  }
+ ]
+}
+</script>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Montserrat:wght@800&family=Anton&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="/assets/screens/home.webp" type="image/webp">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="ShortsFinder home"><svg><use href="/assets/icons.svg#logo"/></svg>ShortsFinder</a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="#features" data-i18n="nav.features">Özellikler</a><a href="#how" data-i18n="nav.how">Nasıl çalışır?</a><a href="#screenshots" data-i18n="nav.shots">Ekranlar</a><a href="#faq" data-i18n="nav.faq">SSS</a>
+    </nav>
+    <label class="lang desk"><svg class="i"><use href="/assets/icons.svg#i-globe"/></svg><select class="lang-select" aria-label="Language"></select></label>
+    <a href="#download" class="btn btn-primary desk" data-i18n="nav.download">Uygulamayı indir</a>
+    <a href="#download" class="btn btn-primary mob" data-i18n="nav.downloadShort">İndir</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><svg class="i"><use href="/assets/icons.svg#i-menu"/></svg></button>
+  </div>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#features" data-i18n="nav.features">Özellikler</a><a href="#how" data-i18n="nav.how">Nasıl çalışır?</a><a href="#screenshots" data-i18n="nav.shots">Ekranlar</a><a href="#faq" data-i18n="nav.faq">SSS</a>
+  <label class="lang"><svg class="i"><use href="/assets/icons.svg#i-globe"/></svg><select class="lang-select" aria-label="Language"></select></label>
+  <div class="stores">
+    <a class="store apple" href="#" data-store="ios"><svg class="i"><use href="/assets/icons.svg#b-apple"/></svg><span><small data-i18n="store.ios">Hemen indir</small><b>App Store</b></span></a>
+    <a class="store play" href="#" data-store="android"><svg class="i"><use href="/assets/icons.svg#b-googleplay"/></svg><span><small data-i18n="store.play">Hemen indir</small><b>Google Play</b></span></a>
+  </div>
+</div>
+
+<main id="top">
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="glow" style="width:520px;height:520px;background:#7C5CFF;opacity:.35;right:-80px;top:-120px"></div>
+  <div class="glow" style="width:420px;height:420px;background:#3B82F6;opacity:.22;left:-160px;top:220px"></div>
+  <svg class="waves" style="bottom:-20px;height:340px;width:120%" viewBox="0 0 1600 340" preserveAspectRatio="none" aria-hidden="true">
+    <defs><linearGradient id="wv" x1="0" x2="1"><stop offset="0" stop-color="#3B82F6" stop-opacity="0"/><stop offset=".4" stop-color="#3B82F6" stop-opacity=".7"/><stop offset=".75" stop-color="#7C5CFF"/><stop offset="1" stop-color="#E040FB" stop-opacity=".2"/></linearGradient></defs>
+    <path d="M0 260 C 300 200, 520 330, 820 250 S 1300 120, 1600 190" fill="none" stroke="url(/#wv)" stroke-width="2"/>
+    <path d="M0 290 C 320 230, 560 340, 860 270 S 1320 160, 1600 230" fill="none" stroke="url(/#wv)" stroke-width="1.2" opacity=".6"/>
+    <path d="M0 315 C 340 260, 600 345, 900 295 S 1340 200, 1600 270" fill="none" stroke="url(/#wv)" stroke-width=".8" opacity=".35"/>
+  </svg>
+  <div class="wrap rel">
+    <div>
+      <span class="eyebrow pill"><svg class="i"><use href="/assets/icons.svg#i-sparkles"/></svg><span data-i18n="hero.eyebrow">YAPAY ZEKÂ İLE</span></span>
+      <h1 data-i18n="hero.title">Uzun videoyu at,<br><span class="grad-text">Shorts’ları al.</span></h1>
+      <p class="lead" data-i18n="hero.lead">YouTube linkini yapıştır, gerisini ShortsFinder halletsin. En iyi anları bulur, kısa videolara dönüştürür ve paylaşmaya hazır hale getirir.</p>
+      <div class="stores">
+        <a class="store apple" href="#" data-store="ios"><svg class="i"><use href="/assets/icons.svg#b-apple"/></svg><span><small data-i18n="store.ios">Hemen indir</small><b>App Store</b></span></a>
+        <a class="store play" href="#" data-store="android"><svg class="i"><use href="/assets/icons.svg#b-googleplay"/></svg><span><small data-i18n="store.play">Hemen indir</small><b>Google Play</b></span></a>
+      </div>
+      <div class="proof"><span><svg class="i"><use href="/assets/icons.svg#i-sparkles"/></svg><span data-i18n="hero.p1">Ücretsiz dene</span></span><span>iPhone &amp; Android</span><span data-i18n="hero.p3">Montaj bilmene gerek yok</span></div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <div class="phone p2"><img src="/assets/screens/moments.webp" alt="" width="393" height="852"></div>
+      <div class="phone p1"><img src="/assets/screens/home.webp" alt="ShortsFinder home screen with YouTube link input" width="393" height="852" fetchpriority="high"></div>
+      <div class="chip-float" style="left:-2%;bottom:120px"><svg class="i"><use href="/assets/icons.svg#i-sparkles"/></svg><span data-i18n="hero.chip1">Güçlü an yakalandı</span> · <em>96</em></div>
+      <div class="chip-float" style="right:0;bottom:40px;animation-delay:-3s"><svg class="i" style="color:#34D399"><use href="/assets/icons.svg#i-circle-check-big"/></svg><span data-i18n="hero.chip2">3 Shorts hazır</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHAT IT DOES ================= -->
+<section id="features">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow" data-i18n="what.eyebrow">Ne işe yarar?</span>
+      <h2 data-i18n="what.title">Tek uzun video, <span class="grad-text">bir sürü Shorts.</span></h2>
+      <p class="lead" data-i18n="what.lead">ShortsFinder videonu baştan sona izler ve izlenmeye değer anları bulur. Sonra bunları düzenlemeye hazır dikey videolara çevirir.</p>
+    </div>
+    <div class="flow reveal">
+      <div class="player media c-podcast">
+        <svg class="glyph"><use href="/assets/icons.svg#i-mic"/></svg>
+        <div class="scan"></div>
+        <div class="bar"><svg class="i" style="width:16px;height:16px"><use href="/assets/icons.svg#i-play"/></svg>12:34<div class="track"><b></b><i style="left:22%"></i><i style="left:51%"></i><i style="left:78%"></i></div>1:12:34</div>
+      </div>
+      <div class="ai-node"><div class="core"><svg class="i"><use href="/assets/icons.svg#i-sparkles"/></svg></div><span data-i18n="what.ai">Yapay zekâ analizi</span><svg class="i arrow"><use href="/assets/icons.svg#i-arrow-right"/></svg></div>
+      <div class="shorts-row">
+        <div class="short media c-podcast" style="--w:150px"><svg class="glyph"><use href="/assets/icons.svg#i-mic"/></svg><span class="tag l"><svg class="i"><use href="/assets/icons.svg#i-sparkles"/></svg>96</span><div class="cap">Discipline beats <b>motivation.</b></div></div>
+        <div class="short media c-podcast" style="--w:150px"><svg class="glyph"><use href="/assets/icons.svg#i-mic"/></svg><span class="tag l"><svg class="i"><use href="/assets/icons.svg#i-sparkles"/></svg>93</span><div class="cap">This mindset changed <b>everything.</b></div></div>
+        <div class="short media c-podcast" style="--w:150px"><svg class="glyph"><use href="/assets/icons.svg#i-mic"/></svg><span class="tag l"><svg class="i"><use href="/assets/icons.svg#i-sparkles"/></svg>90</span><div class="cap">The real reason people <b>quit.</b></div></div>
+      </div>
+    </div>
+    <div class="pipeline reveal">
+      <span><svg class="i"><use href="/assets/icons.svg#i-film"/></svg><span data-i18n="pipe.long">Uzun video</span></span><svg class="i muted" style="align-self:center;width:18px"><use href="/assets/icons.svg#i-chevron-right"/></svg>
+      <span><svg class="i"><use href="/assets/icons.svg#i-sparkles"/></svg><span data-i18n="what.ai">Yapay zekâ analizi</span></span><svg class="i muted" style="align-self:center;width:18px"><use href="/assets/icons.svg#i-chevron-right"/></svg>
+      <span><svg class="i"><use href="/assets/icons.svg#i-star"/></svg><span data-i18n="pipe.best">En iyi anlar</span></span><svg class="i muted" style="align-self:center;width:18px"><use href="/assets/icons.svg#i-chevron-right"/></svg>
+      <span><svg class="i"><use href="/assets/icons.svg#i-scissors"/></svg>Shorts</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= HOW IT WORKS ================= -->
+<section id="how">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow" data-i18n="how.eyebrow">Nasıl çalışır?</span>
+      <h2 data-i18n="how.title">Uzun videodan Shorts’a<br>birkaç adımda.</h2>
+    </div>
+    <div class="steps">
+      <div class="step card reveal"><span class="num">1</span><h3 data-i18n="how.s1t">Linki yapıştır</h3><p data-i18n="how.s1p">Shorts’a çevirmek istediğin YouTube videosunun linkini ekle.</p>
+        <div class="viz"><div class="url"><svg class="i"><use href="/assets/icons.svg#b-youtube"/></svg>youtube.com/watch?v=…</div></div></div>
+      <div class="step card reveal"><span class="num">2</span><h3 data-i18n="how.s2t">En iyi anları yapay zekâ seçsin</h3><p data-i18n="how.s2p">İçeriği analiz eder, en çok ilgi çekecek anları ayıklar.</p>
+        <div class="viz"><div class="frame media c-podcast"></div><div class="frame media c-podcast on"></div><div class="frame media c-podcast"></div><div class="frame media c-podcast on"></div><div class="frame media c-podcast"></div></div></div>
+      <div class="step card reveal"><span class="num">3</span><h3 data-i18n="how.s3t">Dilediğin gibi düzenle</h3><p data-i18n="how.s3p">Altyazıyı, stili, kadrajı ve süreyi kendine göre ayarla.</p>
+        <div class="viz"><div class="short media c-podcast" style="--w:62px;box-shadow:none"><div class="cap">Discipline beats <b>motivation.</b></div></div><div style="display:flex;flex-direction:column;gap:8px;color:var(--text-2)"><svg class="i"><use href="/assets/icons.svg#i-captions"/></svg><svg class="i"><use href="/assets/icons.svg#i-crop"/></svg><svg class="i"><use href="/assets/icons.svg#i-scissors"/></svg></div></div></div>
+      <div class="step card reveal"><span class="num">4</span><h3 data-i18n="how.s4t">İndir ve paylaş</h3><p data-i18n="how.s4p">Hazır videoyu indir, istediğin platformda paylaş.</p>
+        <div class="viz"><span class="social"><svg class="i"><use href="/assets/icons.svg#b-youtube"/></svg></span><span class="social"><svg class="i"><use href="/assets/icons.svg#b-tiktok"/></svg></span><span class="social"><svg class="i"><use href="/assets/icons.svg#b-instagram"/></svg></span><span class="social"><svg class="i"><use href="/assets/icons.svg#i-download"/></svg></span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= AI DETECTION ================= -->
+<section>
+  <div class="glow" style="width:480px;height:480px;background:#7C5CFF;opacity:.2;right:5%;top:15%"></div>
+  <div class="wrap split rel">
+    <div class="reveal">
+      <span class="eyebrow" data-i18n="det.eyebrow">Yapay zekâyla an tespiti</span>
+      <h2 data-i18n="det.title">O anı aramakla<br>uğraşma.</h2>
+      <p class="lead" data-i18n="det.lead">ShortsFinder senin yerine arar. Her sahneyi izlenme potansiyeline göre puanlar, en iyilerini sıralayıp önüne koyar.</p>
+      <div class="tags" id="tags">
+        <span class="on"><svg class="i"><use href="/assets/icons.svg#i-sparkles"/></svg><span data-i18n="det.t1">Akılda kalan sözler</span></span>
+        <span><svg class="i"><use href="/assets/icons.svg#i-zap"/></svg><span data-i18n="det.t2">Beklenmedik anlar</span></span>
+        <span><svg class="i"><use href="/assets/icons.svg#i-star"/></svg><span data-i18n="det.t3">Duygusal tepkiler</span></span>
+        <span><svg class="i"><use href="/assets/icons.svg#i-sparkles"/></svg><span data-i18n="det.t4">Komik anlar</span></span>
+        <span><svg class="i"><use href="/assets/icons.svg#i-circle-check-big"/></svg><span data-i18n="det.t5">Etkileyici kapanışlar</span></span>
+        <span><svg class="i"><use href="/assets/icons.svg#i-mic"/></svg><span data-i18n="det.t6">İlgi çekici sohbetler</span></span>
+        <span><svg class="i"><use href="/assets/icons.svg#i-zap"/></svg><span data-i18n="det.t7">Enerjisi yüksek sahneler</span></span>
+      </div>
+    </div>
+    <div class="split-visual reveal">
+      <div class="phone"><img src="/assets/screens/moments.webp" alt="Best moments ranked by AI score" width="393" height="852" loading="lazy"></div>
+      <div class="score-card" style="left:-4%;top:22%"><span class="big">96</span><div><b data-i18n="det.c1t">Nakavt</b><small data-i18n="det.c1s">AI puanı · 0:24’lük klip</small></div></div>
+      <div class="score-card" style="right:-2%;bottom:18%"><svg class="i" style="color:var(--brand)"><use href="/assets/icons.svg#i-sparkles"/></svg><div><b data-i18n="det.c2t">12 an bulundu</b><small data-i18n="det.c2s">En iyi 3’ü dahil</small></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BEYOND TALKING ================= -->
+<section>
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow" data-i18n="beyond.eyebrow">Sadece konuşma değil</span>
+      <h2 data-i18n="beyond.title">Her güzel an<br><span class="grad-text">söze ihtiyaç duymaz.</span></h2>
+      <p class="lead" data-i18n="beyond.lead">ShortsFinder yalnızca söylenenlere değil, ekranda olup bitene de bakar.</p>
+    </div>
+    <div class="cats">
+      <div class="cat media c-podcast reveal"><svg class="glyph"><use href="/assets/icons.svg#i-mic"/></svg><span class="det"><svg class="i"><use href="/assets/icons.svg#i-sparkles"/></svg><span data-i18n="cat.d1">İddialı çıkış</span></span><h3 data-i18n="cat.n1">Podcast</h3></div>
+      <div class="cat media c-interview reveal"><svg class="glyph"><use href="/assets/icons.svg#i-captions"/></svg><span class="det"><svg class="i"><use href="/assets/icons.svg#i-sparkles"/></svg><span data-i18n="cat.d2">Can alıcı an</span></span><h3 data-i18n="cat.n2">Röportaj</h3></div>
+      <div class="cat media c-football reveal"><svg class="glyph"><use href="/assets/icons.svg#i-trophy"/></svg><span class="det"><svg class="i"><use href="/assets/icons.svg#i-sparkles"/></svg><span data-i18n="cat.d3">Gol</span></span><h3 data-i18n="cat.n3">Spor</h3></div>
+      <div class="cat media c-racing reveal"><svg class="glyph"><use href="/assets/icons.svg#i-flag"/></svg><span class="det"><svg class="i"><use href="/assets/icons.svg#i-sparkles"/></svg><span data-i18n="cat.d4">Sollama</span></span><h3 data-i18n="cat.n4">Motor sporları</h3></div>
+      <div class="cat media c-gaming reveal"><svg class="glyph"><use href="/assets/icons.svg#i-gamepad-2"/></svg><span class="det"><svg class="i"><use href="/assets/icons.svg#i-sparkles"/></svg><span data-i18n="cat.d5">Clutch an</span></span><h3 data-i18n="cat.n5">Oyun</h3></div>
+      <div class="cat media c-react reveal"><svg class="glyph"><use href="/assets/icons.svg#i-zap"/></svg><span class="det"><svg class="i"><use href="/assets/icons.svg#i-sparkles"/></svg><span data-i18n="cat.d6">Efsane tepki</span></span><h3 data-i18n="cat.n6">Tepki videoları</h3></div>
+      <div class="cat media c-events reveal"><svg class="glyph"><use href="/assets/icons.svg#i-music"/></svg><span class="det"><svg class="i"><use href="/assets/icons.svg#i-sparkles"/></svg><span data-i18n="cat.d7">Tribünler coştu</span></span><h3 data-i18n="cat.n7">Etkinlik & konser</h3></div>
+      <div class="cat media c-edu reveal"><svg class="glyph"><use href="/assets/icons.svg#i-badge-check"/></svg><span class="det"><svg class="i"><use href="/assets/icons.svg#i-sparkles"/></svg><span data-i18n="cat.d8">Altın bilgi</span></span><h3 data-i18n="cat.n8">Eğitim</h3></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CAPTIONS ================= -->
+<section>
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow" data-i18n="cap.eyebrow">Otomatik altyazı</span>
+      <h2 data-i18n="cap.title">İzleyiciyi videoda<br>tutan altyazılar.</h2>
+      <p class="lead" data-i18n="cap.lead">Altyazılar kendiliğinden oluşur ve kısa videoya göre tasarlanır. Stilini tek dokunuşla değiştir.</p>
+    </div>
+    <div class="cap-row reveal">
+      <div class="cap-item"><div class="short media c-podcast"><svg class="glyph"><use href="/assets/icons.svg#i-mic"/></svg><div class="cap minimal">Discipline beats <b>motivation.</b></div></div><span data-i18n="cap.s1">Sade</span></div>
+      <div class="cap-item"><div class="short media c-racing"><svg class="glyph"><use href="/assets/icons.svg#i-flag"/></svg><div class="cap">The <b>overtake</b> of the season.</div></div><span data-i18n="cap.s2">Kalın</span></div>
+      <div class="cap-item"><div class="short media c-fight"><svg class="glyph"><use href="/assets/icons.svg#i-swords"/></svg><div class="cap highlight">He did <b>NOT</b> see that coming.</div></div><span data-i18n="cap.s3">Vurgulu</span></div>
+      <div class="cap-item"><div class="short media c-gaming"><svg class="glyph"><use href="/assets/icons.svg#i-gamepad-2"/></svg><div class="cap karaoke">One HP. <b>Clutch.</b></div></div><span data-i18n="cap.s4">Karaoke</span></div>
+      <div class="cap-item"><div class="short media c-football"><svg class="glyph"><use href="/assets/icons.svg#i-trophy"/></svg><div class="cap modern">Top bins from <b>30 yards</b></div></div><span data-i18n="cap.s5">Modern</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= QUICK EDITING ================= -->
+<section>
+  <div class="glow" style="width:460px;height:460px;background:#3B82F6;opacity:.18;left:5%;top:20%"></div>
+  <div class="wrap split rev rel">
+    <div class="reveal">
+      <span class="eyebrow" data-i18n="edit.eyebrow">Hızlı düzenleme</span>
+      <h2 data-i18n="edit.title">Tarzını kat.</h2>
+      <p class="lead" data-i18n="edit.lead">Paylaşmadan önce her videoya son rötuşları yap. Zaman çizelgesiyle boğuşmak yok, öğrenme derdi yok.</p>
+      <div class="tools">
+        <span><i class="ib"><svg class="i"><use href="/assets/icons.svg#i-scissors"/></svg></i><span data-i18n="edit.t1">Süreyi kırp</span></span>
+        <span><i class="ib"><svg class="i"><use href="/assets/icons.svg#i-crop"/></svg></i><span data-i18n="edit.t2">Kadraj</span></span>
+        <span><i class="ib"><svg class="i"><use href="/assets/icons.svg#i-captions"/></svg></i><span data-i18n="edit.t3">Altyazı stili</span></span>
+        <span><i class="ib"><svg class="i"><use href="/assets/icons.svg#i-type"/></svg></i><span data-i18n="edit.t4">Yazı tipi ve boyutu</span></span>
+        <span><i class="ib"><svg class="i"><use href="/assets/icons.svg#i-palette"/></svg></i><span data-i18n="edit.t5">Yazı rengi</span></span>
+        <span><i class="ib"><svg class="i"><use href="/assets/icons.svg#i-move"/></svg></i><span data-i18n="edit.t6">Yazı konumu</span></span>
+        <span><i class="ib"><svg class="i"><use href="/assets/icons.svg#i-gauge"/></svg></i><span data-i18n="edit.t7">Hız</span></span>
+        <span><i class="ib"><svg class="i"><use href="/assets/icons.svg#i-volume-2"/></svg></i><span data-i18n="edit.t8">Ses ve sessize alma</span></span>
+      </div>
+      <span class="note"><svg class="i"><use href="/assets/icons.svg#i-zap"/></svg><span data-i18n="edit.note">Bilerek sade tuttuk: zor kısmı yapay zekâ hallediyor.</span></span>
+    </div>
+    <div class="split-visual reveal">
+      <div class="phone"><img src="/assets/screens/editor.webp" alt="Edit Short screen with trim timeline" width="393" height="852" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BEFORE / AFTER ================= -->
+<section>
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow" data-i18n="ba.eyebrow">Önce / sonra</span>
+      <h2 data-i18n="ba.title">Tek video, <span class="grad-text">üç Shorts.</span></h2>
+    </div>
+    <div class="ba reveal-ba" id="ba">
+      <div>
+        <div class="ba-label" data-i18n="ba.turn">Uzun video</div>
+        <div class="player media c-fight" style="--img:url(/assets/photos/fight-wide.webp)"><svg class="glyph"><use href="/assets/icons.svg#i-mic"/></svg>
+          <div class="bar"><svg class="i" style="width:16px;height:16px"><use href="/assets/icons.svg#i-play"/></svg>0:00<div class="track"><b style="width:12%"></b></div>25:00</div></div>
+        <p class="muted center" style="margin-top:14px;font-size:14px">Main Event · Full Fight · 25:00</p>
+      </div>
+      <svg class="arrow" viewBox="0 0 72 40" fill="none" aria-hidden="true"><path d="M2 30 C 22 4, 46 4, 66 20" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M56 14 l10 6 -11 4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <div>
+        <div class="ba-label" data-i18n="ba.into">Hazır Shorts’lar</div>
+        <div class="shorts-row">
+          <div class="short media c-fight" style="--img:url(/assets/photos/fight-ko.webp)"><span class="tag r">0:36</span><div class="cap">He did <b>NOT</b> see that coming.</div></div>
+          <div class="short media c-fight" style="--img:url(/assets/photos/fight-sub.webp)"><span class="tag r">0:28</span><div class="cap">He almost <b>TAPPED</b> out.</div></div>
+          <div class="short media c-fight" style="--img:url(/assets/photos/crowd.webp)"><span class="tag r">0:33</span><div class="cap">The arena went <b>CRAZY.</b></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FEATURE GRID ================= -->
+<section>
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow" data-i18n="feat.eyebrow">Öne çıkanlar</span>
+      <h2 data-i18n="feat.title">Shorts için gereken<br>her şey tek uygulamada.</h2>
+    </div>
+    <div class="features">
+      <div class="feature card reveal"><i class="ib"><svg class="i"><use href="/assets/icons.svg#i-zap"/></svg></i><h3 data-i18n="feat.f1t">Yapay zekâyla an tespiti</h3><p data-i18n="feat.f1p">Kesip paylaşmaya değer anları bulur.</p></div>
+      <div class="feature card reveal"><i class="ib"><svg class="i"><use href="/assets/icons.svg#i-captions"/></svg></i><h3 data-i18n="feat.f2t">Otomatik altyazı</h3><p data-i18n="feat.f2p">Temiz ve okunaklı altyazıları kendisi oluşturur.</p></div>
+      <div class="feature card reveal"><i class="ib"><svg class="i"><use href="/assets/icons.svg#i-crop"/></svg></i><h3 data-i18n="feat.f3t">Akıllı kadraj</h3><p data-i18n="feat.f3p">Yatay videoları dikey formata sığdırır.</p></div>
+      <div class="feature card reveal"><i class="ib"><svg class="i"><use href="/assets/icons.svg#i-palette"/></svg></i><h3 data-i18n="feat.f4t">Hazır stiller</h3><p data-i18n="feat.f4p">İçeriğine yakışan görünümü seç.</p></div>
+      <div class="feature card reveal"><i class="ib"><svg class="i"><use href="/assets/icons.svg#i-download"/></svg></i><h3 data-i18n="feat.f5t">Hızlı dışa aktarma</h3><p data-i18n="feat.f5p">Videon kısa sürede indirilmeye hazır olur.</p></div>
+      <div class="feature card reveal"><i class="ib"><svg class="i"><use href="/assets/icons.svg#i-wand-sparkles"/></svg></i><h3 data-i18n="feat.f6t">Kolay düzenleme</h3><p data-i18n="feat.f6p">Karmaşık editörlerle uğraşmadan son ayarları yap.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SCREENSHOTS ================= -->
+<section id="screenshots" style="padding-bottom:72px">
+  <div class="wrap shots-head reveal">
+    <div><span class="eyebrow" data-i18n="shots.eyebrow">Ekranlar</span><h2 style="margin-bottom:0" data-i18n="shots.title">ShortsFinder’ı yakından tanı.</h2></div>
+    <div class="shots-nav"><button id="prev" aria-label="Previous screenshot"><svg class="i"><use href="/assets/icons.svg#i-chevron-left"/></svg></button><button id="next" aria-label="Next screenshot"><svg class="i"><use href="/assets/icons.svg#i-chevron-right"/></svg></button></div>
+  </div>
+  <div class="shots" id="shots">
+    <figure class="shot"><div class="phone"><img src="/assets/screens/home.webp" alt="Home" width="393" height="852" loading="lazy"></div><span><b>01</b><span data-i18n="shots.l1">Bul</span></span></figure>
+    <figure class="shot"><div class="phone"><img src="/assets/screens/analysis.webp" alt="AI analysis" width="393" height="852" loading="lazy"></div><span><b>02</b><span data-i18n="shots.l2">İncele</span></span></figure>
+    <figure class="shot"><div class="phone"><img src="/assets/screens/moments.webp" alt="Best moments" width="393" height="852" loading="lazy"></div><span><b>03</b><span data-i18n="shots.l3">Seç</span></span></figure>
+    <figure class="shot"><div class="phone"><img src="/assets/screens/editor.webp" alt="Edit Short" width="393" height="852" loading="lazy"></div><span><b>04</b><span data-i18n="shots.l4">Düzenle</span></span></figure>
+    <figure class="shot"><div class="phone"><img src="/assets/screens/captions.webp" alt="Caption style" width="393" height="852" loading="lazy"></div><span><b>05</b><span data-i18n="shots.l5">Stil</span></span></figure>
+    <figure class="shot"><div class="phone"><img src="/assets/screens/export.webp" alt="Export" width="393" height="852" loading="lazy"></div><span><b>06</b><span data-i18n="shots.l6">İndir</span></span></figure>
+    <figure class="shot"><div class="phone"><img src="/assets/screens/projects.webp" alt="Projects" width="393" height="852" loading="lazy"></div><span><b>07</b><span data-i18n="shots.l7">Projeler</span></span></figure>
+    <figure class="shot"><div class="phone"><img src="/assets/screens/ready.webp" alt="Shorts ready" width="393" height="852" loading="lazy"></div><span><b>08</b><span data-i18n="shots.l8">Hazır</span></span></figure>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section id="download" style="padding-top:40px">
+  <div class="wrap">
+    <div class="cta reveal">
+      <div class="rel">
+        <span class="eyebrow" style="color:#C4B5FD" data-i18n="cta.eyebrow">Hazır mısın?</span>
+        <h2 data-i18n="cta.title">Videolarını<br>Shorts’a dönüştür.</h2>
+        <p class="lead" data-i18n="cta.lead">ShortsFinder’ı indir, en iyi anlarını hemen bulmaya başla.</p>
+        <div class="stores">
+          <a class="store apple" href="#" data-store="ios"><svg class="i"><use href="/assets/icons.svg#b-apple"/></svg><span><small data-i18n="store.ios">Hemen indir</small><b>App Store</b></span></a>
+          <a class="store play" href="#" data-store="android"><svg class="i"><use href="/assets/icons.svg#b-googleplay"/></svg><span><small data-i18n="store.play">Hemen indir</small><b>Google Play</b></span></a>
+        </div>
+      </div>
+      <div class="cta-visual" aria-hidden="true"><div class="phone"><img src="/assets/screens/ready.webp" alt="" width="393" height="852" loading="lazy"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section id="faq">
+  <div class="wrap">
+    <div class="sec-head center reveal"><span class="eyebrow" data-i18n="faq.eyebrow">SSS</span><h2 data-i18n="faq.title">Aklına takılanlar</h2></div>
+    <div class="faq reveal">
+      <details open><summary><span data-i18n="faq.q1">ShortsFinder ne yapar?</span><svg class="i"><use href="/assets/icons.svg#i-plus"/></svg></summary><p data-i18n="faq.a1">Uzun videolardaki en güçlü anları yapay zekâyla bulur ve bunları kısa videolara dönüştürür.</p></details>
+      <details><summary><span data-i18n="faq.q2">YouTube videolarıyla çalışıyor mu?</span><svg class="i"><use href="/assets/icons.svg#i-plus"/></svg></summary><p data-i18n="faq.a2">Evet. Desteklenen bir YouTube videosunun linkini uygulamaya yapıştırman yeterli; gerisini ShortsFinder halleder.</p></details>
+      <details><summary><span data-i18n="faq.q3">Oluşan Shorts’ları düzenleyebilir miyim?</span><svg class="i"><use href="/assets/icons.svg#i-plus"/></svg></summary><p data-i18n="faq.a3">Evet. Altyazı, stil, kadraj, süre ve ses için pratik düzenleme araçları var.</p></details>
+      <details><summary><span data-i18n="faq.q4">Videoları indirebilir miyim?</span><svg class="i"><use href="/assets/icons.svg#i-plus"/></svg></summary><p data-i18n="faq.a4">Evet. Hazır videoları dosya olarak indirip istediğin yerde kullanabilirsin.</p></details>
+      <details><summary><span data-i18n="faq.q5">Videolarımı benim yerime paylaşıyor mu?</span><svg class="i"><use href="/assets/icons.svg#i-plus"/></svg></summary><p data-i18n="faq.a5">Şimdilik hayır. İlk sürüm video oluşturmaya ve indirmeye odaklanıyor; paylaşımı telefonundan kendin yapıyorsun. Doğrudan paylaşım ileride gelebilir.</p></details>
+      <details><summary><span data-i18n="faq.q6">En iyi hangi videolarla çalışır?</span><svg class="i"><use href="/assets/icons.svg#i-plus"/></svg></summary><p data-i18n="faq.a6">Podcast ve röportajlarda harika iş çıkarır; ama asıl farkı, en iyi anın konuşmadan oluştuğu videolarda görürsün: UFC ve MMA maçları, F1 yarışları, futbol maçları, oyun videoları, konserler. Yapay zekâ sadece konuşulanı değil, ekranda olanı da izler.</p></details>
+      <details><summary><span data-i18n="faq.q7">Telefonumdaki videoları kullanabilir miyim?</span><svg class="i"><use href="/assets/icons.svg#i-plus"/></svg></summary><p data-i18n="faq.a7">Evet. YouTube linkinin yanı sıra galerinden uzun bir video seçebilirsin; ShortsFinder en iyi anlarını aynı şekilde bulur.</p></details>
+      <details><summary><span data-i18n="faq.q8">ShortsFinder ücretli mi?</span><svg class="i"><use href="/assets/icons.svg#i-plus"/></svg></summary><p data-i18n="faq.a8">Uygulamayı indirmek ücretsiz, kullanım kredilerle. Her analizin kredisi videonun uzunluğuna göre belirlenir ve seçtiğin 3 Short buna dahildir; fazlası için birkaç kredi daha harcarsın. Abonelik yok, analiz başarısız olursa krediler iade edilir.</p></details>
+      <details><summary><span data-i18n="faq.q9">iPhone’da var mı?</span><svg class="i"><use href="/assets/icons.svg#i-plus"/></svg></summary><p data-i18n="faq.a9">ShortsFinder önce Android’de, Google Play’de yayında olacak. iPhone sürümü de planlarımızda.</p></details>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a href="#top" class="logo"><svg><use href="/assets/icons.svg#logo"/></svg>ShortsFinder</a>
+        <p data-i18n="foot.tagline">Uzun videoyu at, Shorts’ları al.</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram"><svg class="i"><use href="/assets/icons.svg#b-instagram"/></svg></a>
+          <a href="#" aria-label="TikTok"><svg class="i"><use href="/assets/icons.svg#b-tiktok"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg class="i"><use href="/assets/icons.svg#b-youtube"/></svg></a>
+          <a href="#" aria-label="X"><svg class="i"><use href="/assets/icons.svg#b-x"/></svg></a>
+        </div>
+      </div>
+      <div><h4 data-i18n="foot.product">Ürün</h4><ul><li><a href="#features" data-i18n="nav.features">Özellikler</a></li><li><a href="#how" data-i18n="nav.how">Nasıl çalışır?</a></li><li><a href="#screenshots" data-i18n="nav.shots">Ekranlar</a></li><li><a href="#faq" data-i18n="nav.faq">SSS</a></li><li><a href="/privacy.html" data-i18n="foot.privacy">Gizlilik Politikası</a></li><li><a href="/terms.html" data-i18n="foot.terms">Kullanım Koşulları</a></li><li><a href="/delete-account.html">Delete account</a></li></ul></div>
+      <div><h4 data-i18n="foot.get">Uygulamayı indir</h4>
+        <div class="stores" style="flex-direction:column;align-items:flex-start">
+          <a class="store apple" href="#" data-store="ios"><svg class="i"><use href="/assets/icons.svg#b-apple"/></svg><span><small data-i18n="store.ios">Hemen indir</small><b>App Store</b></span></a>
+          <a class="store play" href="#" data-store="android"><svg class="i"><use href="/assets/icons.svg#b-googleplay"/></svg><span><small data-i18n="store.play">Hemen indir</small><b>Google Play</b></span></a>
+        </div>
+      </div>
+    </div>
+    <div class="copy"><span>© <span id="year">2026</span> <span data-i18n="foot.rights">ShortsFinder. Tüm hakları saklıdır.</span></span><span data-i18n="foot.made">İçerik üreticileri için tasarlandı.</span></div>
+  </div>
+</footer>
+<script src="/i18n.js"></script>
+<script src="/main.js" defer></script>
+</body>
+</html>

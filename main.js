@@ -10,7 +10,8 @@ addEventListener('scroll', onScroll, { passive: true }); onScroll();
 const menuBtn = document.getElementById('menuBtn'), menu = document.getElementById('mobileMenu');
 const setMenu = open => {
   menu.classList.toggle('open', open); menuBtn.setAttribute('aria-expanded', open);
-  menuBtn.querySelector('use').setAttribute('href', `assets/icons.svg#i-${open ? 'x' : 'menu'}`);
+  const use = menuBtn.querySelector('use');
+  use.setAttribute('href', use.getAttribute('href').replace(/#.*/, `#i-${open ? 'x' : 'menu'}`));
 };
 menuBtn.addEventListener('click', () => setMenu(!menu.classList.contains('open')));
 menu.addEventListener('click', e => { if (e.target.closest('a')) setMenu(false); });

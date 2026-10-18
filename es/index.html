@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ShortsFinder: crea Shorts de YouTube con IA</title>
+<meta name="description" content="Convierte tus videos largos de YouTube en Shorts que enganchan. ShortsFinder detecta los mejores momentos, los recorta en vertical, les pone subtítulos y te los deja listos para editar y descargar.">
+<meta name="theme-color" content="#07070C">
+<link rel="canonical" href="https://shortsfinder.com/es/">
+<link rel="alternate" hreflang="en" href="https://shortsfinder.com/">
+<link rel="alternate" hreflang="tr" href="https://shortsfinder.com/tr/">
+<link rel="alternate" hreflang="es" href="https://shortsfinder.com/es/">
+<link rel="alternate" hreflang="de" href="https://shortsfinder.com/de/">
+<link rel="alternate" hreflang="x-default" href="https://shortsfinder.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ShortsFinder — Encuentra el momento. Crea el Short.">
+<meta property="og:description" content="Convierte tus videos largos de YouTube en Shorts que enganchan. ShortsFinder detecta los mejores momentos, los recorta en vertical, les pone subtítulos y te los deja listos para editar y descargar.">
+<meta property="og:url" content="https://shortsfinder.com/es/">
+<meta property="og:image" content="https://shortsfinder.com/assets/og.png">
+<meta property="og:site_name" content="ShortsFinder">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="ShortsFinder app turning a long video into ranked Shorts">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ShortsFinder — Encuentra el momento. Crea el Short.">
+<meta name="twitter:description" content="Convierte tus videos largos de YouTube en Shorts que enganchan. ShortsFinder detecta los mejores momentos, los recorta en vertical, les pone subtítulos y te los deja listos para editar y descargar.">
+<meta name="twitter:image" content="https://shortsfinder.com/assets/og.png">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="apple-touch-icon" href="/assets/icon-512.png">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://shortsfinder.com/#org",
+   "name": "ShortsFinder",
+   "url": "https://shortsfinder.com/",
+   "logo": "https://shortsfinder.com/assets/icon-512.png",
+   "email": "ornekoguzhan@gmail.com",
+   "founder": {
+    "@type": "Person",
+    "name": "Oğuzhan Örnek"
+   }
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://shortsfinder.com/#site",
+   "name": "ShortsFinder",
+   "url": "https://shortsfinder.com/",
+   "publisher": {
+    "@id": "https://shortsfinder.com/#org"
+   },
+   "inLanguage": [
+    "en",
+    "tr",
+    "es",
+    "de"
+   ]
+  },
+  {
+   "@type": "MobileApplication",
+   "name": "ShortsFinder",
+   "alternateName": "Shorts Finder",
+   "operatingSystem": "Android",
+   "applicationCategory": "MultimediaApplication",
+   "applicationSubCategory": "Video editor",
+   "url": "https://shortsfinder.com/",
+   "image": "https://shortsfinder.com/assets/og.png",
+   "publisher": {
+    "@id": "https://shortsfinder.com/#org"
+   },
+   "description": "AI app that finds the best moments in long YouTube or gallery videos (podcasts, interviews, UFC/MMA, F1, football, gaming) and turns them into vertical Shorts with automatic captions, then lets you trim, crop and export them.",
+   "featureList": [
+    "AI moment detection with scores",
+    "Automatic word-by-word captions in 5 styles",
+    "Vertical 9:16 crop and reframe",
+    "Trim, speed and audio tools",
+    "1080p export on device",
+    "YouTube links and gallery videos"
+   ],
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "description": "Free download; credits sold in-app"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "¿Qué es ShortsFinder?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Una app que usa IA para encontrar los mejores momentos de tus videos largos y convertirlos en videos cortos."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Funciona con videos de YouTube?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Sí. Solo tienes que pegar en la app el enlace de un video de YouTube compatible y ShortsFinder se encarga del resto."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Puedo editar los Shorts?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Sí. Puedes ajustar subtítulos, estilo, encuadre, duración y audio con herramientas sencillas."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Puedo descargar los videos?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Sí. Cuando tu Short esté listo, lo exportas como archivo de video."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿ShortsFinder publica mis videos por mí?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Por ahora no. La primera versión se centra en crear y exportar Shorts; los publicas tú desde tu teléfono. Más adelante podríamos añadir la publicación directa."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Con qué videos funciona mejor?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Con podcasts y entrevistas, claro, pero también con videos donde el mejor momento no necesita palabras: peleas de UFC y MMA, carreras de F1, partidos de fútbol, gaming, conciertos y eventos. La IA no solo escucha, también mira lo que pasa en pantalla."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Puedo usar videos de mi teléfono?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Sí. Además de enlaces de YouTube, puedes elegir un video largo de tu galería y ShortsFinder encontrará sus mejores momentos igual."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Cuánto cuesta ShortsFinder?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "La app se descarga gratis y funciona con créditos. Cada análisis cuesta según la duración del video e incluye 3 Shorts a tu elección; si quieres más, son unos pocos créditos extra. Sin suscripción, y si un análisis falla, te devolvemos los créditos."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Está disponible para iPhone?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "ShortsFinder llega primero a Android, en Google Play. La versión para iPhone está en camino."
+     }
+    }
+   ],
+   "inLanguage": "es"
+  }
+ ]
+}
+</script>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Montserrat:wght@800&family=Anton&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="/assets/screens/home.webp" type="image/webp">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="ShortsFinder home"><svg><use href="/assets/icons.svg#logo"/></svg>ShortsFinder</a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="#features" data-i18n="nav.features">Funciones</a><a href="#how" data-i18n="nav.how">Cómo funciona</a><a href="#screenshots" data-i18n="nav.shots">Capturas</a><a href="#faq" data-i18n="nav.faq">Preguntas</a>
+    </nav>
+    <label class="lang desk"><svg class="i"><use href="/assets/icons.svg#i-globe"/></svg><select class="lang-select" aria-label="Language"></select></label>
+    <a href="#download" class="btn btn-primary desk" data-i18n="nav.download">Descargar la app</a>
+    <a href="#download" class="btn btn-primary mob" data-i18n="nav.downloadShort">Descargar</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><svg class="i"><use href="/assets/icons.svg#i-menu"/></svg></button>
+  </div>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#features" data-i18n="nav.features">Funciones</a><a href="#how" data-i18n="nav.how">Cómo funciona</a><a href="#screenshots" data-i18n="nav.shots">Capturas</a><a href="#faq" data-i18n="nav.faq">Preguntas</a>
+  <label class="lang"><svg class="i"><use href="/assets/icons.svg#i-globe"/></svg><select class="lang-select" aria-label="Language"></select></label>
+  <div class="stores">
+    <a class="store apple" href="#" data-store="ios"><svg class="i"><use href="/assets/icons.svg#b-apple"/></svg><span><small data-i18n="store.ios">Descárgalo en el</small><b>App Store</b></span></a>
+    <a class="store play" href="#" data-store="android"><svg class="i"><use href="/assets/icons.svg#b-googleplay"/></svg><span><small data-i18n="store.play">Disponible en</small><b>Google Play</b></span></a>
+  </div>
+</div>
+
+<main id="top">
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="glow" style="width:520px;height:520px;background:#7C5CFF;opacity:.35;right:-80px;top:-120px"></div>
+  <div class="glow" style="width:420px;height:420px;background:#3B82F6;opacity:.22;left:-160px;top:220px"></div>
+  <svg class="waves" style="bottom:-20px;height:340px;width:120%" viewBox="0 0 1600 340" preserveAspectRatio="none" aria-hidden="true">
+    <defs><linearGradient id="wv" x1="0" x2="1"><stop offset="0" stop-color="#3B82F6" stop-opacity="0"/><stop offset=".4" stop-color="#3B82F6" stop-opacity=".7"/><stop offset=".75" stop-color="#7C5CFF"/><stop offset="1" stop-color="#E040FB" stop-opacity=".2"/></linearGradient></defs>
+    <path d="M0 260 C 300 200, 520 330, 820 250 S 1300 120, 1600 190" fill="none" stroke="url(/#wv)" stroke-width="2"/>
+    <path d="M0 290 C 320 230, 560 340, 860 270 S 1320 160, 1600 230" fill="none" stroke="url(/#wv)" stroke-width="1.2" opacity=".6"/>
+    <path d="M0 315 C 340 260, 600 345, 900 295 S 1340 200, 1600 270" fill="none" stroke="url(/#wv)" stroke-width=".8" opacity=".35"/>
+  </svg>
+  <div class="wrap rel">
+    <div>
+      <span class="eyebrow pill"><svg class="i"><use href="/assets/icons.svg#i-sparkles"/></svg><span data-i18n="hero.eyebrow">CON INTELIGENCIA ARTIFICIAL</span></span>
+      <h1 data-i18n="hero.title">Encuentra el momento.<br>Crea el <span class="grad-text">Short.</span></h1>
+      <p class="lead" data-i18n="hero.lead">Pega un enlace de YouTube y deja que ShortsFinder haga el resto: encuentra los mejores momentos, los convierte en videos cortos y te los deja listos para publicar.</p>
+      <div class="stores">
+        <a class="store apple" href="#" data-store="ios"><svg class="i"><use href="/assets/icons.svg#b-apple"/></svg><span><small data-i18n="store.ios">Descárgalo en el</small><b>App Store</b></span></a>
+        <a class="store play" href="#" data-store="android"><svg class="i"><use href="/assets/icons.svg#b-googleplay"/></svg><span><small data-i18n="store.play">Disponible en</small><b>Google Play</b></span></a>
+      </div>
+      <div class="proof"><span><svg class="i"><use href="/assets/icons.svg#i-sparkles"/></svg><span data-i18n="hero.p1">Empieza gratis</span></span><span>iPhone &amp; Android</span><span data-i18n="hero.p3">No necesitas saber editar</span></div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <div class="phone p2"><img src="/assets/screens/moments.webp" alt="" width="393" height="852"></div>
+      <div class="phone p1"><img src="/assets/screens/home.webp" alt="ShortsFinder home screen with YouTube link input" width="393" height="852" fetchpriority="high"></div>
+      <div class="chip-float" style="left:-2%;bottom:120px"><svg class="i"><use href="/assets/icons.svg#i-sparkles"/></svg><span data-i18n="hero.chip1">Momentazo detectado</span> · <em>96</em></div>
+      <div class="chip-float" style="right:0;bottom:40px;animation-delay:-3s"><svg class="i" style="color:#34D399"><use href="/assets/icons.svg#i-circle-check-big"/></svg><span data-i18n="hero.chip2">3 Shorts listos</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHAT IT DOES ================= -->
+<section id="features">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow" data-i18n="what.eyebrow">Qué hace</span>
+      <h2 data-i18n="what.title">Un video largo. <span class="grad-text">Un montón de Shorts.</span></h2>
+      <p class="lead" data-i18n="what.lead">ShortsFinder revisa tu video de principio a fin y encuentra los momentos que valen la pena. Después los convierte en Shorts verticales listos para editar.</p>
+    </div>
+    <div class="flow reveal">
+      <div class="player media c-podcast">
+        <svg class="glyph"><use href="/assets/icons.svg#i-mic"/></svg>
+        <div class="scan"></div>
+        <div class="bar"><svg class="i" style="width:16px;height:16px"><use href="/assets/icons.svg#i-play"/></svg>12:34<div class="track"><b></b><i style="left:22%"></i><i style="left:51%"></i><i style="left:78%"></i></div>1:12:34</div>
+      </div>
+      <div class="ai-node"><div class="core"><svg class="i"><use href="/assets/icons.svg#i-sparkles"/></svg></div><span data-i18n="what.ai">Análisis con IA</span><svg class="i arrow"><use href="/assets/icons.svg#i-arrow-right"/></svg></div>
+      <div class="shorts-row">
+        <div class="short media c-podcast" style="--w:150px"><svg class="glyph"><use href="/assets/icons.svg#i-mic"/></svg><span class="tag l"><svg class="i"><use href="/assets/icons.svg#i-sparkles"/></svg>96</span><div class="cap">Discipline beats <b>motivation.</b></div></div>
+        <div class="short media c-podcast" style="--w:150px"><svg class="glyph"><use href="/assets/icons.svg#i-mic"/></svg><span class="tag l"><svg class="i"><use href="/assets/icons.svg#i-sparkles"/></svg>93</span><div class="cap">This mindset changed <b>everything.</b></div></div>
+        <div class="short media c-podcast" style="--w:150px"><svg class="glyph"><use href="/assets/icons.svg#i-mic"/></svg><span class="tag l"><svg class="i"><use href="/assets/icons.svg#i-sparkles"/></svg>90</span><div class="cap">The real reason people <b>quit.</b></div></div>
+      </div>
+    </div>
+    <div class="pipeline reveal">
+      <span><svg class="i"><use href="/assets/icons.svg#i-film"/></svg><span data-i18n="pipe.long">Video largo</span></span><svg class="i muted" style="align-self:center;width:18px"><use href="/assets/icons.svg#i-chevron-right"/></svg>
+      <span><svg class="i"><use href="/assets/icons.svg#i-sparkles"/></svg><span data-i18n="what.ai">Análisis con IA</span></span><svg class="i muted" style="align-self:center;width:18px"><use href="/assets/icons.svg#i-chevron-right"/></svg>
+      <span><svg class="i"><use href="/assets/icons.svg#i-star"/></svg><span data-i18n="pipe.best">Mejores momentos</span></span><svg class="i muted" style="align-self:center;width:18px"><use href="/assets/icons.svg#i-chevron-right"/></svg>
+      <span><svg class="i"><use href="/assets/icons.svg#i-scissors"/></svg>Shorts</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= HOW IT WORKS ================= -->
+<section id="how">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow" data-i18n="how.eyebrow">Cómo funciona</span>
+      <h2 data-i18n="how.title">De un video largo a Shorts<br>en pocos pasos.</h2>
+    </div>
+    <div class="steps">
+      <div class="step card reveal"><span class="num">1</span><h3 data-i18n="how.s1t">Pega el enlace</h3><p data-i18n="how.s1p">Elige el video de YouTube que quieres convertir en Shorts.</p>
+        <div class="viz"><div class="url"><svg class="i"><use href="/assets/icons.svg#b-youtube"/></svg>youtube.com/watch?v=…</div></div></div>
+      <div class="step card reveal"><span class="num">2</span><h3 data-i18n="how.s2t">La IA elige lo mejor</h3><p data-i18n="how.s2p">Analiza el contenido y se queda con los momentos que más enganchan.</p>
+        <div class="viz"><div class="frame media c-podcast"></div><div class="frame media c-podcast on"></div><div class="frame media c-podcast"></div><div class="frame media c-podcast on"></div><div class="frame media c-podcast"></div></div></div>
+      <div class="step card reveal"><span class="num">3</span><h3 data-i18n="how.s3t">Dale tu toque</h3><p data-i18n="how.s3p">Ajusta subtítulos, estilo, encuadre y duración a tu gusto.</p>
+        <div class="viz"><div class="short media c-podcast" style="--w:62px;box-shadow:none"><div class="cap">Discipline beats <b>motivation.</b></div></div><div style="display:flex;flex-direction:column;gap:8px;color:var(--text-2)"><svg class="i"><use href="/assets/icons.svg#i-captions"/></svg><svg class="i"><use href="/assets/icons.svg#i-crop"/></svg><svg class="i"><use href="/assets/icons.svg#i-scissors"/></svg></div></div></div>
+      <div class="step card reveal"><span class="num">4</span><h3 data-i18n="how.s4t">Descarga y publica</h3><p data-i18n="how.s4p">Exporta tu Short y súbelo a donde quieras.</p>
+        <div class="viz"><span class="social"><svg class="i"><use href="/assets/icons.svg#b-youtube"/></svg></span><span class="social"><svg class="i"><use href="/assets/icons.svg#b-tiktok"/></svg></span><span class="social"><svg class="i"><use href="/assets/icons.svg#b-instagram"/></svg></span><span class="social"><svg class="i"><use href="/assets/icons.svg#i-download"/></svg></span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= AI DETECTION ================= -->
+<section>
+  <div class="glow" style="width:480px;height:480px;background:#7C5CFF;opacity:.2;right:5%;top:15%"></div>
+  <div class="wrap split rel">
+    <div class="reveal">
+      <span class="eyebrow" data-i18n="det.eyebrow">Detección de momentos con IA</span>
+      <h2 data-i18n="det.title">Olvídate de buscar<br>el momento perfecto.</h2>
+      <p class="lead" data-i18n="det.lead">ShortsFinder lo encuentra por ti. Nuestra IA puntúa cada escena según su potencial para enganchar y te muestra las mejores, en orden.</p>
+      <div class="tags" id="tags">
+        <span class="on"><svg class="i"><use href="/assets/icons.svg#i-sparkles"/></svg><span data-i18n="det.t1">Frases que marcan</span></span>
+        <span><svg class="i"><use href="/assets/icons.svg#i-zap"/></svg><span data-i18n="det.t2">Momentos inesperados</span></span>
+        <span><svg class="i"><use href="/assets/icons.svg#i-star"/></svg><span data-i18n="det.t3">Reacciones emotivas</span></span>
+        <span><svg class="i"><use href="/assets/icons.svg#i-sparkles"/></svg><span data-i18n="det.t4">Momentos graciosos</span></span>
+        <span><svg class="i"><use href="/assets/icons.svg#i-circle-check-big"/></svg><span data-i18n="det.t5">Cierres potentes</span></span>
+        <span><svg class="i"><use href="/assets/icons.svg#i-mic"/></svg><span data-i18n="det.t6">Conversaciones interesantes</span></span>
+        <span><svg class="i"><use href="/assets/icons.svg#i-zap"/></svg><span data-i18n="det.t7">Escenas con mucha energía</span></span>
+      </div>
+    </div>
+    <div class="split-visual reveal">
+      <div class="phone"><img src="/assets/screens/moments.webp" alt="Best moments ranked by AI score" width="393" height="852" loading="lazy"></div>
+      <div class="score-card" style="left:-4%;top:22%"><span class="big">96</span><div><b data-i18n="det.c1t">Derribo</b><small data-i18n="det.c1s">Puntuación IA · clip de 0:24</small></div></div>
+      <div class="score-card" style="right:-2%;bottom:18%"><svg class="i" style="color:var(--brand)"><use href="/assets/icons.svg#i-sparkles"/></svg><div><b data-i18n="det.c2t">12 momentos encontrados</b><small data-i18n="det.c2s">Los 3 mejores, incluidos</small></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BEYOND TALKING ================= -->
+<section>
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow" data-i18n="beyond.eyebrow">Mucho más que videos hablados</span>
+      <h2 data-i18n="beyond.title">No todos los grandes momentos<br><span class="grad-text">necesitan palabras.</span></h2>
+      <p class="lead" data-i18n="beyond.lead">ShortsFinder entiende lo que pasa en pantalla, no solo lo que se dice.</p>
+    </div>
+    <div class="cats">
+      <div class="cat media c-podcast reveal"><svg class="glyph"><use href="/assets/icons.svg#i-mic"/></svg><span class="det"><svg class="i"><use href="/assets/icons.svg#i-sparkles"/></svg><span data-i18n="cat.d1">Opinión polémica</span></span><h3 data-i18n="cat.n1">Pódcasts</h3></div>
+      <div class="cat media c-interview reveal"><svg class="glyph"><use href="/assets/icons.svg#i-captions"/></svg><span class="det"><svg class="i"><use href="/assets/icons.svg#i-sparkles"/></svg><span data-i18n="cat.d2">El giro de la historia</span></span><h3 data-i18n="cat.n2">Entrevistas</h3></div>
+      <div class="cat media c-football reveal"><svg class="glyph"><use href="/assets/icons.svg#i-trophy"/></svg><span class="det"><svg class="i"><use href="/assets/icons.svg#i-sparkles"/></svg><span data-i18n="cat.d3">Golazo</span></span><h3 data-i18n="cat.n3">Deportes</h3></div>
+      <div class="cat media c-racing reveal"><svg class="glyph"><use href="/assets/icons.svg#i-flag"/></svg><span class="det"><svg class="i"><use href="/assets/icons.svg#i-sparkles"/></svg><span data-i18n="cat.d4">Adelantamiento</span></span><h3 data-i18n="cat.n4">Automovilismo</h3></div>
+      <div class="cat media c-gaming reveal"><svg class="glyph"><use href="/assets/icons.svg#i-gamepad-2"/></svg><span class="det"><svg class="i"><use href="/assets/icons.svg#i-sparkles"/></svg><span data-i18n="cat.d5">Jugada clutch</span></span><h3 data-i18n="cat.n5">Videojuegos</h3></div>
+      <div class="cat media c-react reveal"><svg class="glyph"><use href="/assets/icons.svg#i-zap"/></svg><span class="det"><svg class="i"><use href="/assets/icons.svg#i-sparkles"/></svg><span data-i18n="cat.d6">Reacción épica</span></span><h3 data-i18n="cat.n6">Reacciones</h3></div>
+      <div class="cat media c-events reveal"><svg class="glyph"><use href="/assets/icons.svg#i-music"/></svg><span class="det"><svg class="i"><use href="/assets/icons.svg#i-sparkles"/></svg><span data-i18n="cat.d7">El público estalla</span></span><h3 data-i18n="cat.n7">Eventos y conciertos</h3></div>
+      <div class="cat media c-edu reveal"><svg class="glyph"><use href="/assets/icons.svg#i-badge-check"/></svg><span class="det"><svg class="i"><use href="/assets/icons.svg#i-sparkles"/></svg><span data-i18n="cat.d8">Idea clave</span></span><h3 data-i18n="cat.n8">Educación</h3></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CAPTIONS ================= -->
+<section>
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow" data-i18n="cap.eyebrow">Subtítulos automáticos</span>
+      <h2 data-i18n="cap.title">Subtítulos que<br>atrapan.</h2>
+      <p class="lead" data-i18n="cap.lead">Se generan solos y están pensados para video corto. Cambia el estilo con un toque.</p>
+    </div>
+    <div class="cap-row reveal">
+      <div class="cap-item"><div class="short media c-podcast"><svg class="glyph"><use href="/assets/icons.svg#i-mic"/></svg><div class="cap minimal">Discipline beats <b>motivation.</b></div></div><span data-i18n="cap.s1">Minimal</span></div>
+      <div class="cap-item"><div class="short media c-racing"><svg class="glyph"><use href="/assets/icons.svg#i-flag"/></svg><div class="cap">The <b>overtake</b> of the season.</div></div><span data-i18n="cap.s2">Negrita</span></div>
+      <div class="cap-item"><div class="short media c-fight"><svg class="glyph"><use href="/assets/icons.svg#i-swords"/></svg><div class="cap highlight">He did <b>NOT</b> see that coming.</div></div><span data-i18n="cap.s3">Resaltado</span></div>
+      <div class="cap-item"><div class="short media c-gaming"><svg class="glyph"><use href="/assets/icons.svg#i-gamepad-2"/></svg><div class="cap karaoke">One HP. <b>Clutch.</b></div></div><span data-i18n="cap.s4">Karaoke</span></div>
+      <div class="cap-item"><div class="short media c-football"><svg class="glyph"><use href="/assets/icons.svg#i-trophy"/></svg><div class="cap modern">Top bins from <b>30 yards</b></div></div><span data-i18n="cap.s5">Moderno</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= QUICK EDITING ================= -->
+<section>
+  <div class="glow" style="width:460px;height:460px;background:#3B82F6;opacity:.18;left:5%;top:20%"></div>
+  <div class="wrap split rev rel">
+    <div class="reveal">
+      <span class="eyebrow" data-i18n="edit.eyebrow">Edición rápida</span>
+      <h2 data-i18n="edit.title">Dale tu estilo.</h2>
+      <p class="lead" data-i18n="edit.lead">Retoca cada Short antes de exportarlo. Sin líneas de tiempo ni complicaciones.</p>
+      <div class="tools">
+        <span><i class="ib"><svg class="i"><use href="/assets/icons.svg#i-scissors"/></svg></i><span data-i18n="edit.t1">Recortar duración</span></span>
+        <span><i class="ib"><svg class="i"><use href="/assets/icons.svg#i-crop"/></svg></i><span data-i18n="edit.t2">Encuadre</span></span>
+        <span><i class="ib"><svg class="i"><use href="/assets/icons.svg#i-captions"/></svg></i><span data-i18n="edit.t3">Estilo de subtítulos</span></span>
+        <span><i class="ib"><svg class="i"><use href="/assets/icons.svg#i-type"/></svg></i><span data-i18n="edit.t4">Fuente y tamaño</span></span>
+        <span><i class="ib"><svg class="i"><use href="/assets/icons.svg#i-palette"/></svg></i><span data-i18n="edit.t5">Color del texto</span></span>
+        <span><i class="ib"><svg class="i"><use href="/assets/icons.svg#i-move"/></svg></i><span data-i18n="edit.t6">Posición del texto</span></span>
+        <span><i class="ib"><svg class="i"><use href="/assets/icons.svg#i-gauge"/></svg></i><span data-i18n="edit.t7">Velocidad</span></span>
+        <span><i class="ib"><svg class="i"><use href="/assets/icons.svg#i-volume-2"/></svg></i><span data-i18n="edit.t8">Volumen y silencio</span></span>
+      </div>
+      <span class="note"><svg class="i"><use href="/assets/icons.svg#i-zap"/></svg><span data-i18n="edit.note">Simple a propósito: la IA se encarga de lo difícil.</span></span>
+    </div>
+    <div class="split-visual reveal">
+      <div class="phone"><img src="/assets/screens/editor.webp" alt="Edit Short screen with trim timeline" width="393" height="852" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BEFORE / AFTER ================= -->
+<section>
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow" data-i18n="ba.eyebrow">Antes y después</span>
+      <h2 data-i18n="ba.title">Un video. <span class="grad-text">Tres Shorts.</span></h2>
+    </div>
+    <div class="ba reveal-ba" id="ba">
+      <div>
+        <div class="ba-label" data-i18n="ba.turn">De esto…</div>
+        <div class="player media c-fight" style="--img:url(/assets/photos/fight-wide.webp)"><svg class="glyph"><use href="/assets/icons.svg#i-mic"/></svg>
+          <div class="bar"><svg class="i" style="width:16px;height:16px"><use href="/assets/icons.svg#i-play"/></svg>0:00<div class="track"><b style="width:12%"></b></div>25:00</div></div>
+        <p class="muted center" style="margin-top:14px;font-size:14px">Main Event · Full Fight · 25:00</p>
+      </div>
+      <svg class="arrow" viewBox="0 0 72 40" fill="none" aria-hidden="true"><path d="M2 30 C 22 4, 46 4, 66 20" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M56 14 l10 6 -11 4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <div>
+        <div class="ba-label" data-i18n="ba.into">…a esto</div>
+        <div class="shorts-row">
+          <div class="short media c-fight" style="--img:url(/assets/photos/fight-ko.webp)"><span class="tag r">0:36</span><div class="cap">He did <b>NOT</b> see that coming.</div></div>
+          <div class="short media c-fight" style="--img:url(/assets/photos/fight-sub.webp)"><span class="tag r">0:28</span><div class="cap">He almost <b>TAPPED</b> out.</div></div>
+          <div class="short media c-fight" style="--img:url(/assets/photos/crowd.webp)"><span class="tag r">0:33</span><div class="cap">The arena went <b>CRAZY.</b></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FEATURE GRID ================= -->
+<section>
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow" data-i18n="feat.eyebrow">Funciones principales</span>
+      <h2 data-i18n="feat.title">Todo lo que necesitas<br>para crear Shorts.</h2>
+    </div>
+    <div class="features">
+      <div class="feature card reveal"><i class="ib"><svg class="i"><use href="/assets/icons.svg#i-zap"/></svg></i><h3 data-i18n="feat.f1t">Detección de momentos con IA</h3><p data-i18n="feat.f1p">Encuentra los momentos que merecen un clip.</p></div>
+      <div class="feature card reveal"><i class="ib"><svg class="i"><use href="/assets/icons.svg#i-captions"/></svg></i><h3 data-i18n="feat.f2t">Subtítulos automáticos</h3><p data-i18n="feat.f2p">Subtítulos limpios sin escribir una sola palabra.</p></div>
+      <div class="feature card reveal"><i class="ib"><svg class="i"><use href="/assets/icons.svg#i-crop"/></svg></i><h3 data-i18n="feat.f3t">Reencuadre inteligente</h3><p data-i18n="feat.f3p">Pasa tus videos horizontales a formato vertical.</p></div>
+      <div class="feature card reveal"><i class="ib"><svg class="i"><use href="/assets/icons.svg#i-palette"/></svg></i><h3 data-i18n="feat.f4t">Estilos para todo</h3><p data-i18n="feat.f4p">Elige el look que mejor va con tu contenido.</p></div>
+      <div class="feature card reveal"><i class="ib"><svg class="i"><use href="/assets/icons.svg#i-download"/></svg></i><h3 data-i18n="feat.f5t">Exportación rápida</h3><p data-i18n="feat.f5p">Tus videos, listos para descargar en un momento.</p></div>
+      <div class="feature card reveal"><i class="ib"><svg class="i"><use href="/assets/icons.svg#i-wand-sparkles"/></svg></i><h3 data-i18n="feat.f6t">Edición sin complicaciones</h3><p data-i18n="feat.f6p">Haz los últimos ajustes sin pelearte con un editor.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SCREENSHOTS ================= -->
+<section id="screenshots" style="padding-bottom:72px">
+  <div class="wrap shots-head reveal">
+    <div><span class="eyebrow" data-i18n="shots.eyebrow">Capturas</span><h2 style="margin-bottom:0" data-i18n="shots.title">Así es ShortsFinder.</h2></div>
+    <div class="shots-nav"><button id="prev" aria-label="Previous screenshot"><svg class="i"><use href="/assets/icons.svg#i-chevron-left"/></svg></button><button id="next" aria-label="Next screenshot"><svg class="i"><use href="/assets/icons.svg#i-chevron-right"/></svg></button></div>
+  </div>
+  <div class="shots" id="shots">
+    <figure class="shot"><div class="phone"><img src="/assets/screens/home.webp" alt="Home" width="393" height="852" loading="lazy"></div><span><b>01</b><span data-i18n="shots.l1">Buscar</span></span></figure>
+    <figure class="shot"><div class="phone"><img src="/assets/screens/analysis.webp" alt="AI analysis" width="393" height="852" loading="lazy"></div><span><b>02</b><span data-i18n="shots.l2">Analizar</span></span></figure>
+    <figure class="shot"><div class="phone"><img src="/assets/screens/moments.webp" alt="Best moments" width="393" height="852" loading="lazy"></div><span><b>03</b><span data-i18n="shots.l3">Elegir</span></span></figure>
+    <figure class="shot"><div class="phone"><img src="/assets/screens/editor.webp" alt="Edit Short" width="393" height="852" loading="lazy"></div><span><b>04</b><span data-i18n="shots.l4">Editar</span></span></figure>
+    <figure class="shot"><div class="phone"><img src="/assets/screens/captions.webp" alt="Caption style" width="393" height="852" loading="lazy"></div><span><b>05</b><span data-i18n="shots.l5">Estilo</span></span></figure>
+    <figure class="shot"><div class="phone"><img src="/assets/screens/export.webp" alt="Export" width="393" height="852" loading="lazy"></div><span><b>06</b><span data-i18n="shots.l6">Exportar</span></span></figure>
+    <figure class="shot"><div class="phone"><img src="/assets/screens/projects.webp" alt="Projects" width="393" height="852" loading="lazy"></div><span><b>07</b><span data-i18n="shots.l7">Proyectos</span></span></figure>
+    <figure class="shot"><div class="phone"><img src="/assets/screens/ready.webp" alt="Shorts ready" width="393" height="852" loading="lazy"></div><span><b>08</b><span data-i18n="shots.l8">Listo</span></span></figure>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section id="download" style="padding-top:40px">
+  <div class="wrap">
+    <div class="cta reveal">
+      <div class="rel">
+        <span class="eyebrow" style="color:#C4B5FD" data-i18n="cta.eyebrow">¿Empezamos?</span>
+        <h2 data-i18n="cta.title">Convierte tus videos<br>en Shorts.</h2>
+        <p class="lead" data-i18n="cta.lead">Descarga ShortsFinder y empieza a sacarle partido a tus mejores momentos.</p>
+        <div class="stores">
+          <a class="store apple" href="#" data-store="ios"><svg class="i"><use href="/assets/icons.svg#b-apple"/></svg><span><small data-i18n="store.ios">Descárgalo en el</small><b>App Store</b></span></a>
+          <a class="store play" href="#" data-store="android"><svg class="i"><use href="/assets/icons.svg#b-googleplay"/></svg><span><small data-i18n="store.play">Disponible en</small><b>Google Play</b></span></a>
+        </div>
+      </div>
+      <div class="cta-visual" aria-hidden="true"><div class="phone"><img src="/assets/screens/ready.webp" alt="" width="393" height="852" loading="lazy"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section id="faq">
+  <div class="wrap">
+    <div class="sec-head center reveal"><span class="eyebrow" data-i18n="faq.eyebrow">Preguntas frecuentes</span><h2 data-i18n="faq.title">Lo que más nos preguntan</h2></div>
+    <div class="faq reveal">
+      <details open><summary><span data-i18n="faq.q1">¿Qué es ShortsFinder?</span><svg class="i"><use href="/assets/icons.svg#i-plus"/></svg></summary><p data-i18n="faq.a1">Una app que usa IA para encontrar los mejores momentos de tus videos largos y convertirlos en videos cortos.</p></details>
+      <details><summary><span data-i18n="faq.q2">¿Funciona con videos de YouTube?</span><svg class="i"><use href="/assets/icons.svg#i-plus"/></svg></summary><p data-i18n="faq.a2">Sí. Solo tienes que pegar en la app el enlace de un video de YouTube compatible y ShortsFinder se encarga del resto.</p></details>
+      <details><summary><span data-i18n="faq.q3">¿Puedo editar los Shorts?</span><svg class="i"><use href="/assets/icons.svg#i-plus"/></svg></summary><p data-i18n="faq.a3">Sí. Puedes ajustar subtítulos, estilo, encuadre, duración y audio con herramientas sencillas.</p></details>
+      <details><summary><span data-i18n="faq.q4">¿Puedo descargar los videos?</span><svg class="i"><use href="/assets/icons.svg#i-plus"/></svg></summary><p data-i18n="faq.a4">Sí. Cuando tu Short esté listo, lo exportas como archivo de video.</p></details>
+      <details><summary><span data-i18n="faq.q5">¿ShortsFinder publica mis videos por mí?</span><svg class="i"><use href="/assets/icons.svg#i-plus"/></svg></summary><p data-i18n="faq.a5">Por ahora no. La primera versión se centra en crear y exportar Shorts; los publicas tú desde tu teléfono. Más adelante podríamos añadir la publicación directa.</p></details>
+      <details><summary><span data-i18n="faq.q6">¿Con qué videos funciona mejor?</span><svg class="i"><use href="/assets/icons.svg#i-plus"/></svg></summary><p data-i18n="faq.a6">Con podcasts y entrevistas, claro, pero también con videos donde el mejor momento no necesita palabras: peleas de UFC y MMA, carreras de F1, partidos de fútbol, gaming, conciertos y eventos. La IA no solo escucha, también mira lo que pasa en pantalla.</p></details>
+      <details><summary><span data-i18n="faq.q7">¿Puedo usar videos de mi teléfono?</span><svg class="i"><use href="/assets/icons.svg#i-plus"/></svg></summary><p data-i18n="faq.a7">Sí. Además de enlaces de YouTube, puedes elegir un video largo de tu galería y ShortsFinder encontrará sus mejores momentos igual.</p></details>
+      <details><summary><span data-i18n="faq.q8">¿Cuánto cuesta ShortsFinder?</span><svg class="i"><use href="/assets/icons.svg#i-plus"/></svg></summary><p data-i18n="faq.a8">La app se descarga gratis y funciona con créditos. Cada análisis cuesta según la duración del video e incluye 3 Shorts a tu elección; si quieres más, son unos pocos créditos extra. Sin suscripción, y si un análisis falla, te devolvemos los créditos.</p></details>
+      <details><summary><span data-i18n="faq.q9">¿Está disponible para iPhone?</span><svg class="i"><use href="/assets/icons.svg#i-plus"/></svg></summary><p data-i18n="faq.a9">ShortsFinder llega primero a Android, en Google Play. La versión para iPhone está en camino.</p></details>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a href="#top" class="logo"><svg><use href="/assets/icons.svg#logo"/></svg>ShortsFinder</a>
+        <p data-i18n="foot.tagline">Encuentra el momento. Crea el Short.</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram"><svg class="i"><use href="/assets/icons.svg#b-instagram"/></svg></a>
+          <a href="#" aria-label="TikTok"><svg class="i"><use href="/assets/icons.svg#b-tiktok"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg class="i"><use href="/assets/icons.svg#b-youtube"/></svg></a>
+          <a href="#" aria-label="X"><svg class="i"><use href="/assets/icons.svg#b-x"/></svg></a>
+        </div>
+      </div>
+      <div><h4 data-i18n="foot.product">Producto</h4><ul><li><a href="#features" data-i18n="nav.features">Funciones</a></li><li><a href="#how" data-i18n="nav.how">Cómo funciona</a></li><li><a href="#screenshots" data-i18n="nav.shots">Capturas</a></li><li><a href="#faq" data-i18n="nav.faq">Preguntas</a></li><li><a href="/privacy.html" data-i18n="foot.privacy">Privacidad</a></li><li><a href="/terms.html" data-i18n="foot.terms">Términos y condiciones</a></li><li><a href="/delete-account.html">Delete account</a></li></ul></div>
+      <div><h4 data-i18n="foot.get">Descarga la app</h4>
+        <div class="stores" style="flex-direction:column;align-items:flex-start">
+          <a class="store apple" href="#" data-store="ios"><svg class="i"><use href="/assets/icons.svg#b-apple"/></svg><span><small data-i18n="store.ios">Descárgalo en el</small><b>App Store</b></span></a>
+          <a class="store play" href="#" data-store="android"><svg class="i"><use href="/assets/icons.svg#b-googleplay"/></svg><span><small data-i18n="store.play">Disponible en</small><b>Google Play</b></span></a>
+        </div>
+      </div>
+    </div>
+    <div class="copy"><span>© <span id="year">2026</span> <span data-i18n="foot.rights">ShortsFinder. Todos los derechos reservados.</span></span><span data-i18n="foot.made">Hecho para creadores.</span></div>
+  </div>
+</footer>
+<script src="/i18n.js"></script>
+<script src="/main.js" defer></script>
+</body>
+</html>
