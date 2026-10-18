@@ -14,9 +14,10 @@
 <li><b>Analysis results:</b> transcripts, suggested moments, titles and timestamps for each project.</li>
 <li><b>Purchases:</b> which credit packs you bought and your credit balance. Payments are handled by Google Play; we never see your card details. Purchase records are processed by RevenueCat on our behalf.</li>
 <li><b>Device token:</b> a Firebase Cloud Messaging token so we can notify you when a project is ready.</li>
+<li><b>App usage:</b> which screens you open and actions such as signing in, starting an analysis, exporting a Short or buying credits, with counts like video length or credits spent, plus your device model, Android and app version, language and approximate country. This is collected with Google Analytics for Firebase. It never includes your email, the links you paste or video titles.</li>
 <li><b>Crash reports:</b> if the app crashes, Firebase Crashlytics sends us a report with the error details, your device model, Android and app version, and your user ID, so we can find and fix the problem.</li>
 </ul>
-<p>We do not show ads, we do not use advertising IDs, and we do not sell or share your data for advertising.</p>
+<p>We do not show ads, we do not collect advertising IDs (Google Analytics runs with advertising ID collection turned off), and we do not sell or share your data for advertising.</p>
 
 <h2>What stays on your phone</h2>
 <p>Editing and exporting happen on your device. Your edits and the final exported videos are saved to your phone and are not uploaded to us.</p>
@@ -28,15 +29,17 @@
 <li>To process purchases and prevent fraud.</li>
 <li>To send notifications you can turn off in Android settings.</li>
 <li>To diagnose crashes and keep the app stable.</li>
+<li>To understand how the app is used (for example, where people get stuck) and improve it.</li>
 </ul>
 
 <h2>Service providers</h2>
-<p>Google Firebase (authentication, database, notifications, crash reporting), Google Gemini API (video analysis), Cloudflare R2 (temporary media storage), Google Play and RevenueCat (purchases). They process data only to provide these services to us.</p>
+<p>Google Firebase (authentication, database, notifications, crash reporting, Google Analytics), Google Gemini API (video analysis), Cloudflare R2 (temporary media storage), Google Play and RevenueCat (purchases). They process data only to provide these services to us.</p>
 
 <h2>Retention</h2>
 <ul>
 <li>Uploaded video, audio and frames are deleted automatically within 3 days.</li>
 <li>Crash reports are kept by Firebase Crashlytics for 90 days.</li>
+<li>Usage data linked to your account or device is kept by Google Analytics for 2 months; only aggregated reports are kept longer.</li>
 <li>Account data, projects and analysis results are kept until you delete your account.</li>
 <li>Purchase records may be kept longer where tax or accounting law requires it.</li>
 </ul>
