@@ -73,7 +73,7 @@ tr: {
   'faq.a8': "Uygulamayı indirmek ücretsiz, kullanım kredilerle. Her analizin kredisi videonun uzunluğuna göre belirlenir ve seçtiğin 3 Short buna dahildir; fazlası için birkaç kredi daha harcarsın. Abonelik yok, analiz başarısız olursa krediler iade edilir.",
   'faq.q9': "iPhone’da var mı?",
   'faq.a9': "ShortsFinder önce Android’de, Google Play’de yayında olacak. iPhone sürümü de planlarımızda.",
-  'foot.tagline': 'Uzun videoyu at, Shorts’ları al.', 'foot.product': 'Ürün', 'foot.get': 'Uygulamayı indir',
+  'foot.guide': 'Shorts yapma rehberi', 'foot.tagline': 'Uzun videoyu at, Shorts’ları al.', 'foot.product': 'Ürün', 'foot.get': 'Uygulamayı indir',
   'foot.privacy': 'Gizlilik Politikası', 'foot.terms': 'Kullanım Koşulları', 'foot.rights': 'ShortsFinder. Tüm hakları saklıdır.', 'foot.made': 'İçerik üreticileri için tasarlandı.',
 },
 es: {
@@ -138,7 +138,7 @@ es: {
   'faq.a8': "La app se descarga gratis y funciona con créditos. Cada análisis cuesta según la duración del video e incluye 3 Shorts a tu elección; si quieres más, son unos pocos créditos extra. Sin suscripción, y si un análisis falla, te devolvemos los créditos.",
   'faq.q9': "¿Está disponible para iPhone?",
   'faq.a9': "ShortsFinder llega primero a Android, en Google Play. La versión para iPhone está en camino.",
-  'foot.tagline': 'Encuentra el momento. Crea el Short.', 'foot.product': 'Producto', 'foot.get': 'Descarga la app',
+  'foot.guide': 'Cómo crear Shorts', 'foot.tagline': 'Encuentra el momento. Crea el Short.', 'foot.product': 'Producto', 'foot.get': 'Descarga la app',
   'foot.privacy': 'Privacidad', 'foot.terms': 'Términos y condiciones', 'foot.rights': 'ShortsFinder. Todos los derechos reservados.', 'foot.made': 'Hecho para creadores.',
 },
 de: {
@@ -203,7 +203,7 @@ de: {
   'faq.a8': "Der Download ist kostenlos, bezahlt wird mit Credits. Jede Analyse kostet je nach Videolänge und enthält 3 Shorts deiner Wahl; weitere Shorts kosten ein paar Credits extra. Kein Abo – und schlägt eine Analyse fehl, bekommst du die Credits zurück.",
   'faq.q9': "Gibt es ShortsFinder fürs iPhone?",
   'faq.a9': "ShortsFinder startet zuerst auf Android bei Google Play. Eine iPhone-Version ist geplant.",
-  'foot.tagline': 'Momente finden. Shorts machen.', 'foot.product': 'Produkt', 'foot.get': 'App holen',
+  'foot.guide': 'Shorts erstellen: So geht’s', 'foot.tagline': 'Momente finden. Shorts machen.', 'foot.product': 'Produkt', 'foot.get': 'App holen',
   'foot.privacy': 'Datenschutz', 'foot.terms': 'AGB', 'foot.rights': 'ShortsFinder. Alle Rechte vorbehalten.', 'foot.made': 'Für Creator gemacht.',
 },
 };

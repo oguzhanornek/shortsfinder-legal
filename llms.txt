@@ -14,7 +14,10 @@
 - An analysis is priced by video length and includes 3 Shorts of the user's choice; extra Shorts cost a few more credits. Credits for a failed analysis are refunded.
 
 ## Links
-- Website: https://shortsfinder.com/
+- Website (English): https://shortsfinder.com/
+- Website in Turkish: https://shortsfinder.com/tr/ · Spanish: https://shortsfinder.com/es/ · German: https://shortsfinder.com/de/
+- Guide, how to turn a long YouTube video into Shorts with AI: https://shortsfinder.com/youtube-to-shorts/
+  (Turkish: https://shortsfinder.com/tr/youtube-videosunu-shorts-yapma/ · Spanish: https://shortsfinder.com/es/convertir-video-youtube-a-shorts/ · German: https://shortsfinder.com/de/youtube-video-in-shorts-umwandeln/)
 - Privacy policy: https://shortsfinder.com/privacy.html
 - Delete account: https://shortsfinder.com/delete-account.html
 - Contact: ornekoguzhan@gmail.com
