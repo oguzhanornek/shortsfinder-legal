@@ -1,6 +1,6 @@
 // ShortsFinder site — minimal JS: sticky nav, mobile menu, scroll reveal, tag cycling, carousel.
-// Store URLs: fill in once the apps are live.
-const STORE = { ios: '#', android: '#' };
+// Store URLs (both apps submitted for review 2026-11-08).
+const STORE = { ios: 'https://apps.apple.com/app/id6825474335', android: 'https://play.google.com/store/apps/details?id=dev.ornek.shortsfinder' };
 document.querySelectorAll('[data-store]').forEach(a => { a.href = STORE[a.dataset.store]; });
 
 const nav = document.getElementById('nav');
